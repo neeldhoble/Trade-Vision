@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.trade{
+    color: green;
+}
+
+.btn{
+    background-color: green;
+}
+
+.background{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+
+
+@keyframes marquee {
+    from {
+      transform: translateX(60%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 60s linear infinite;
+  }
+  
